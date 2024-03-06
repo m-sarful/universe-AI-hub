@@ -10,9 +10,9 @@ const loadData = async () => {
     const items = contents.tools
     delete items[5];
     delete items[10];
-    console.log(items)
+    // console.log(items)
     items.forEach(content =>{
-      console.log(content);
+      // console.log(content);
       const container = document.getElementById('ai-container');
       const div = document.createElement('div');
       div.classList = `card w-96 bg-base-100 shadow-xl`
@@ -32,7 +32,7 @@ const loadData = async () => {
                        <p><i class="fa-solid fa-calendar-days"></i> ${content.published_in}</p>
                        </div>
                        <div class="flex justify-end">
-                        <button><i class="fa-solid fa-arrow-right"></i></button>
+                        <button onclick="my_modal_1.showModal()"><i class="fa-solid fa-arrow-right"></i></button>
                        </div>
                       </div>
                     </div>
@@ -43,7 +43,9 @@ const loadData = async () => {
    }
 
 
-
+ const showModal = () =>{
+  console.log('open Modal');
+ }
 
 
 

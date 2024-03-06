@@ -25,9 +25,8 @@
         <section class="mt-12">
             <div id="ai-container" class="grid gap-4 grid-cols-1 lg:grid-cols-3">
 
-                <!-- <div class="card w-96 bg-base-100 shadow-xl">
-
-                     <figure><img class="p-4" src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+                <div class="card w-96 bg-base-100 shadow-xl">
+                             <figure><img class="p-4" src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
                     <div class="card-body">
                       <h2 class="card-title">Features</h2>
                       <ul class="text-gray-400">
@@ -42,14 +41,55 @@
                        <p><i class="fa-solid fa-calendar-days"></i></p>
                        </div>
                        <div class="flex justify-end">
-                        <button><i class="fa-solid fa-arrow-right"></i></button>
+                        <button onclick="my_modal_3.showModal()"><i class="fa-solid fa-arrow-right"></i></button>
                        </div>
                       </div>
                     </div> 
 
-                  </div> -->
+                  </div>
                
             </div>
+        </section>
+
+        <!-- modal section  -->
+        <section>
+         <!-- You can open the modal using ID.showModal() method -->
+
+ <dialog id="my_modal_3" class="modal">
+  <div class="modal-box w-11/12 max-w-5xl">
+    <form method="dialog">
+      <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+    </form>
+    <div class="flex justify-between gap-4 mt-8">
+        <div class="border border-red-500 w-1/2 bg-pink-100 p-2">
+            <h1 class="text-xl font-bold">ChatGPT is an AI-powered chatbot platform that uses OpenAI's GPT technology to simulate human conversation.</h1>
+            <div class="flex flex-col lg:flex-row justify-between gap-2 p-2">
+                <button class="btn text-green-600 font-bold">$10/ <br> month <br> Basic</button>
+                <button class="btn text-orange-300 font-bold">$50/ <br> month <br> Pro</button>
+                <button class="btn text-red-600 font-bold">Contact <br> us <br> Enterprise</button>
+            </div>
+            <div class="mt-4 flex flex-col lg:flex-row justify-between gap-2 p-2">
+                <div class="w-1/2">
+                    <h1 class="font-bold">Features</h1>
+                       <li>this is my first heading heading heading heading</li>
+                       <li></li>
+                       <li></li>
+                </div>
+                <div class="w-1/2">
+                    <h1 class="font-bold">Integration</h1>
+                    <li>this is my first heading heading heading heading</li>
+                    <li></li>
+                    <li></li>
+                </div>
+            </div>
+        </div>
+        <div class="border border-green-500 w-1/2 flex justify-center">
+             <img class="p-2" src="download.png" alt="">
+        </div>
+    </div>
+  </div>
+ </dialog> 
+
         </section>
        
     </main>
@@ -57,7 +97,7 @@
     </footer>
 
 
-    <script src="scripts/index.js"></script>
+    <!-- <script src="scripts/index.js"></script>  -->
 </body>
 
 </html>
